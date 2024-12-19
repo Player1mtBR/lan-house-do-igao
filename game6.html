@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva - Jogo 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/logo.png" alt="Logo" class="logo">
+        <!--<h1>Lan House do Igao</h1>-->
+    </header>
+    <main>
+        <h2>Star Wars Republic Commando</h2>
+        <img src="imgs/game6.jpeg" alt="Jogo 6" class="game-img">
+        <div class="game-desc">
+            <img src="imgs/g601.jpg" class="desc-img"><img src="imgs/g602.jpg" class="desc-img"><img src="imgs/g603.jpg" class="desc-img">
+            <p>Plataforma:::XBOX</p><p>genero:::::tiro em primeira pessoa</p><p><br><br><br>Reserve seu horario aqui</p>
+        </div>
+        <!--":" são usados como espaçamento, e também essa fonte ñ tem acentuação :/ -->
+        
+        <div class="slider-container">
+            <input type="range" min="1" max="24" value="1" id="hoursSlider">
+            <label for="hoursSlider" id="hoursLabel">1 Hora</label>
+        </div>
+
+        <button popovertarget="confirmacao" onclick="setTimeout(confirmReservation, 3000)">Concluir</button>
+        <div id="confirmacao" popover><h2>Reserva concluida <br><br><br>aproveite</h2></div>
+        <footer>
+        2024 Os Parça Vergonha - Direitos Reservados 
+    </footer>
+    </main>
+    <script src="game.js"></script>
+</body>
+</html>
