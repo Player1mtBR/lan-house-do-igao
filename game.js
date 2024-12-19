@@ -5,5 +5,5 @@ document.getElementById('hoursSlider').addEventListener('input', function() {
 
 function confirmReservation() {
     //alert("Reserva concluída!");
-    window.location.href = "site.html";
+    window.location.href = "index.html";
 }
